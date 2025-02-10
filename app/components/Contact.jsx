@@ -34,10 +34,7 @@ const Contact = () => {
 
 
   return (
-    <motion.div
-    initial={{y:40,opacity:0}}
-                 whileInView={{y:0,opacity:100 ,}}
-                 transition={{duration:.8,type:'smooth' }}
+    <div
      id='contact' className='w-full px-[10%] py-14 scroll-mt-20 bg-[`${isDarkMode?bg-transparent:url("/footer-bg-color.png")}`] bg-no-repeat 
     bg-center bg-[length:90%_auto]'>
          <motion.h4
@@ -91,7 +88,7 @@ const Contact = () => {
                  transition={{duration:.8, type:'smooth' }}
              className='mt-4 text-center'>{result}</motion.p>
            </form>
-    </motion.div>
+    </div>
   )
 }
 

@@ -6,10 +6,8 @@ import {motion} from 'motion/react'
 
 const Work = ({isDarkMode}) => {
   return (
-    <motion.div
-    initial={{x:-100, opacity:0}}
-                 whileInView={{x:0,opacity:100}}
-                 transition={{duration:1,delay:1, type:'smooth' }}
+    <div
+   
      id='work' className='w-full px-[10%] py-14 scroll-mt-20'>
            <h4 className='text-lg mb-2 text-center font-Ovo '>My portfolio</h4>
            <h2 className='text-center text-5xl font-Ovo'>My latest works</h2>
@@ -58,7 +56,7 @@ const Work = ({isDarkMode}) => {
        >Show more <Image src={isDarkMode?assets.right_arrow_bold_dark:assets.right_arrow_bold} alt='error'
         className='w-4'
        /></motion.a>
-    </motion.div>
+    </div>
   )
 }
 

@@ -6,10 +6,8 @@ import {motion} from 'motion/react'
 
 const Service = ({isDarkMode}) => {
   return (
-    <motion.div
-     initial={{x:100, opacity:0}}
-                 whileInView={{x:0,opacity:100}}
-                 transition={{duration:1,delay:1, type:'smooth' }}
+    <div
+     
      >
 
       <div id='services' className='w-full px-[12%] py-14 scroll-mt-20'>
@@ -79,7 +77,7 @@ const Service = ({isDarkMode}) => {
       </div>
 
 
-    </motion.div>
+    </div>
   )
 }
 

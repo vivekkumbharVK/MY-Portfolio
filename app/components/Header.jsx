@@ -6,10 +6,8 @@ import {motion} from 'motion/react'
 
 const Header = () => {
   return (
-    <motion.div 
-    initial={{scale:0 ,opacity:0}}
-    whileInView={{scale:1 ,opacity:100, type:"smooth"}}
-    transition={{duration:1}} 
+    <div 
+    
      className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col
     items-center justify-center gap-4'>
       <motion.div 
@@ -66,7 +64,7 @@ const Header = () => {
                     className='w-4'
                 /></motion.a>
         </div>
-    </motion.div>
+    </div>
   )
 }
 
